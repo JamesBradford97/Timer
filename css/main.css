@@ -1,0 +1,79 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 20px;
+}
+#main>div{
+    margin: 10px;
+}
+#timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    border: goldenrod 10px solid;
+    font-size: 70px;
+}
+#set-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#set-time>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+input{
+    width: 50px;
+    margin-left: 10px;
+}
+#control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
+#start:hover{
+    background-color: green;
+}
+#stop:hover{
+    background-color: red;
+}
+#start, #stop{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#stop{
+    /* visibility: hidden; */
+    border:red solid 2px;
+    display: none;
+}
+#start{
+    border:green solid 2px;
+}
